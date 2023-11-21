@@ -1,0 +1,27 @@
+{
+    "aws": {
+      "accessKeyId": "AKIASEL5QTLSGARKT5MM",
+      "secretAccessKey": "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",
+      "region": "us-east-1",
+      "tableName": "AWSMarketplaceMeteringRecordssep"
+    },
+    "backend": {
+      "tokenEndpoint": "https://pen285poc.searchunify.ai/oauth/token",
+      "username":"ghost@searchunify.com",
+      "password":"PocSEarchunify@345r654%3",
+      "apiEndpoints": {
+        "updateApiUsage": "https://pen285poc.searchunify.ai/api/v2/api-logs/updatApiUsageInAws",
+        "tileDataMetrics": "https://pen285poc.searchunify.ai/api/v2/overview/tileDataMetrics2"
+      },
+      "headers": {
+        "token": {
+          "Content-Type": "application/x-www-form-urlencoded",
+          "Authorization": "Basic Q2NiODgzN2EyYWQyMTg5NTYzZDNmMTBlZTAzYmY4MTdmOlM4ZGIwY2NhNDVmMmVkNDJiZTkwMTJiYmZjZDkzMDM1Yw=="
+        },
+        "api": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  }
+  
