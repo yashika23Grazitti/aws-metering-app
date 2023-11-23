@@ -1,3 +1,4 @@
+
 const axios = require('axios');
 const { DynamoDBClient, PutItemCommand } = require('@aws-sdk/client-dynamodb');
 
@@ -43,7 +44,7 @@ const updateApiUsage = async (accessToken) => {
     }, {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${accessToken}`
+        'Authorization': 'Bearer ${accessToken}'
       }
     });
 
@@ -89,5 +90,10 @@ const main = async () => {
     console.error('Error:', error);
   }
 };
+//main();
 
-main();
+setInterval(async () => {
+  console.log("this is furst time");
+  await main();
+ },3600000)
+

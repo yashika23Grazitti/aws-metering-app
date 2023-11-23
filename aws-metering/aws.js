@@ -62,7 +62,7 @@ const insertItemToDynamoDB = async (item) => {
     const item1 = {
   customerIdentifier: { S: "XGVTe9n4fQK"},
   quantity: {N: item.toString()},
-  dimension: {S: "API Usase Per Hour"},
+  dimension: {S: "API Usage Per Hour"},
   create_timestamp: { N: now }
 };
 
